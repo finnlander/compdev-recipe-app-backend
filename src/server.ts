@@ -82,27 +82,32 @@ server
       res: Response<AuthResponse | GenericResponse>
     ) => {
       const { username, password } = req.body;
-      if (!username || !password) {
-        return res.status(400).send({
-          status: "ERROR",
-          error: "'username' and 'password' required",
-        });
-      }
 
-      if (!userService.authorize(username, password)) {
-        return res
-          .status(403)
-          .send({ status: "ERROR", error: "invalid 'username' or 'password'" });
-      }
+      // simulate small delay to allow testing frontend loading indicator
+      setTimeout(() => {
+        if (!username || !password) {
+          return res.status(400).send({
+            status: "ERROR",
+            error: "'username' and 'password' required",
+          });
+        }
 
-      const user = userService.getUserByUsername(username);
-      if (!user) {
-        return res
-          .status(500)
-          .send({ status: "ERROR", error: "Unexpected internal error" });
-      }
+        if (!userService.authorize(username, password)) {
+          return res.status(403).send({
+            status: "ERROR",
+            error: "invalid 'username' or 'password'",
+          });
+        }
 
-      res.status(200).send(toAuthResponse(user));
+        const user = userService.getUserByUsername(username);
+        if (!user) {
+          return res
+            .status(500)
+            .send({ status: "ERROR", error: "Unexpected internal error" });
+        }
+
+        res.status(200).send(toAuthResponse(user));
+      }, 2000);
     }
   )
   .post(
@@ -170,7 +175,10 @@ server
       const ingredients = ingredientNames.map((ingredientName) =>
         ingredientService.getOrAdd(ingredientName)
       );
-      return res.status(200).send(ingredients);
+
+      setTimeout(() => {
+        res.status(200).send(ingredients);
+      }, 500);
     }
   )
   .get("/users", (req: Request<any>, res: Response) => {

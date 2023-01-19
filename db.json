@@ -5,6 +5,12 @@
       "username": "testUser",
       "passwordHash": "560a8e7a6a61184500cc66f4c470cc3e4914ef3fbbc02d1342cbec20d4c6e3b342a68b799bd507069c077941a6e2f955d1e04d6fb29614796a07cdc0290db7b0c723404354c38449b5d446e07bf4bd715fbc22d6b8ffd6eadfb6cc5729b139114305ff96e218a51404da14d5347107a01342e09c9d5560503677f82d3b0303bfe20c215a9ee2b860cb8bab1cd9b2b58acbc7c9e5cf7c6bca8f13e2bd031046e8aeb1f0b902d1411b5fd37f2beb9b83fb89ac5817dfd426ebc4ddacb441b01774d28ad9d8bb2f2f76da93d51867aed8cb564f2a4f4b8d4943c940d98e8baf40a77dc2b6aef0ae972a2337d91912141483493295ad327a455e1132c6c984098f65",
       "passwordSalt": "c738243ca131988648a6351cc3618376"
+    },
+    {
+      "id": 1,
+      "username": "testuser@example.com",
+      "passwordHash": "f3cf464905740f873b279901276049d8f47589ce3e8b0593001a2391a3a18f244ece665b7c826962e48d9ed9048a4139f206994d36431c68caaffcdbb42dca8ed269dc2489f27fcc0cfd90799ec9bec921b799e2cfe7ba2320b39241a906de4597b4f40327d0b99cb1f993a996ef2b64e79bfd3d58d4f5ed1e0a57d519b3cf2426543b27253bd9dc98ad12d982a4b7889d2e91e9566e295ede1e2321c7f2ee6ee7ccc874686ec4acfe301d88d8aef2014ec31919b870d32ed014627770b99cb5834e15a714f085b0c2c7da5c75cfefa7a13988416af7770f4b7ea3c0761b64122d3aa7a8efa74bf5ba444def31e371b27278c842d5088ee73c93780454502935",
+      "passwordSalt": "6f6f6e60411d9c254008dcf1febfd99c"
     }
   ],
   "ingredients": [
@@ -103,15 +109,11 @@
     {
       "id": 24,
       "name": "cheese slice x"
-    },
-    {
-      "id": 25,
-      "name": "test"
     }
   ],
   "recipes": [
     {
-      "id": 1,
+      "id": "a3a31241",
       "name": "A Mighty Burger",
       "description": "Sample recipe of a burger",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Burger-King-Bacon-Cheeseburger.jpg",
@@ -175,66 +177,10 @@
             }
           ]
         }
-      ],
-      "items": [
-        {
-          "ordinal": 1,
-          "ingredient": {
-            "id": 1,
-            "name": "bun"
-          },
-          "amount": 1,
-          "unit": "pcs"
-        },
-        {
-          "ordinal": 2,
-          "ingredient": {
-            "id": 2,
-            "name": "cheese slice"
-          },
-          "amount": 1,
-          "unit": "pcs"
-        },
-        {
-          "ordinal": 3,
-          "ingredient": {
-            "id": 3,
-            "name": "beef steak"
-          },
-          "amount": 1,
-          "unit": "pcs"
-        },
-        {
-          "ordinal": 4,
-          "ingredient": {
-            "id": 4,
-            "name": "pickles"
-          },
-          "amount": 2,
-          "unit": "pcs"
-        },
-        {
-          "ordinal": 5,
-          "ingredient": {
-            "id": 5,
-            "name": "tomato slices"
-          },
-          "amount": 2,
-          "unit": "pcs"
-        },
-        {
-          "ordinal": 6,
-          "ingredient": {
-            "id": 6,
-            "name": "green salad slice"
-          },
-          "amount": 1,
-          "unit": "pcs"
-        }
       ]
     },
     {
-      "id": 2,
+      "id": "29156ed3",
       "name": "Wiener Schnitzel",
       "description": "A traditional german schnitzel recipe",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Wiener_Schnitzel_at_restaurant_Faro%2C_Helsinki.jpg",
@@ -263,29 +209,10 @@
           ]
         }
       ],
-      "items": [
-        {
-          "ordinal": 1,
-          "ingredient": {
-            "id": 7,
-            "name": "Premium wieners"
-          },
-          "amount": 4,
-          "unit": "pcs"
-        },
-        {
-          "ordinal": 2,
-          "ingredient": {
-            "id": 8,
-            "name": "French fries"
-          },
-          "amount": 0.5,
-          "unit": "kg"
-        }
-      ]
+      "type": "[Recipes] Update recipe success"
     },
     {
-      "id": 3,
+      "id": "78cee750",
       "name": "Traditional Mac & Cheese",
       "description": "Sample recipe of mac and cheese",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Original_Mac_n_Cheese_.jpg",
@@ -435,134 +362,6 @@
               "unit": "tsp"
             }
           ]
-        }
-      ],
-      "items": [
-        {
-          "ordinal": 1,
-          "ingredient": {
-            "id": 9,
-            "name": "macaroni (elbow pasta)"
-          },
-          "amount": 250,
-          "unit": "g"
-        },
-        {
-          "ordinal": 2,
-          "ingredient": {
-            "id": 10,
-            "name": "unsalted butter"
-          },
-          "amount": 15,
-          "unit": "g"
-        },
-        {
-          "ordinal": 3,
-          "ingredient": {
-            "id": 11,
-            "name": "panko breadcrumbs"
-          },
-          "amount": 11,
-          "unit": "cup(s)"
-        },
-        {
-          "ordinal": 4,
-          "ingredient": {
-            "id": 10,
-            "name": "unsalted butter"
-          },
-          "amount": 30,
-          "unit": "g"
-        },
-        {
-          "ordinal": 5,
-          "ingredient": {
-            "id": 12,
-            "name": "salt"
-          },
-          "amount": 0.25,
-          "unit": "tsp"
-        },
-        {
-          "ordinal": 6,
-          "ingredient": {
-            "id": 10,
-            "name": "unsalted butter"
-          },
-          "amount": 60,
-          "unit": "g"
-        },
-        {
-          "ordinal": 7,
-          "ingredient": {
-            "id": 13,
-            "name": "flour"
-          },
-          "amount": 0.33,
-          "unit": "cup(s)"
-        },
-        {
-          "ordinal": 8,
-          "ingredient": {
-            "id": 14,
-            "name": "milk"
-          },
-          "amount": 3,
-          "unit": "cup(s)"
-        },
-        {
-          "ordinal": 9,
-          "ingredient": {
-            "id": 15,
-            "name": "freshly shredded cheese"
-          },
-          "amount": 2,
-          "unit": "cup(s)"
-        },
-        {
-          "ordinal": 10,
-          "ingredient": {
-            "id": 16,
-            "name": "freshly shredded mozzarella cheese"
-          },
-          "amount": 1,
-          "unit": "cup(s)"
-        },
-        {
-          "ordinal": 11,
-          "ingredient": {
-            "id": 12,
-            "name": "salt"
-          },
-          "amount": 0.75,
-          "unit": "tsp"
-        },
-        {
-          "ordinal": 12,
-          "ingredient": {
-            "id": 17,
-            "name": "garlic powder"
-          },
-          "amount": 1,
-          "unit": "tsp"
-        },
-        {
-          "ordinal": 13,
-          "ingredient": {
-            "id": 18,
-            "name": "onion powder"
-          },
-          "amount": 0.5,
-          "unit": "tsp"
-        },
-        {
-          "ordinal": 14,
-          "ingredient": {
-            "id": 19,
-            "name": "mustard powder"
-          },
-          "amount": 0.5,
-          "unit": "tsp"
         }
       ]
     }
